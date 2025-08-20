@@ -129,6 +129,9 @@
   border-radius: 20px;
   color: #fff;
 }
+.price-card__button_text:hover {
+  cursor: pointer;
+}
 .price-card__business::before {
   content: "popular";
   position: absolute;
