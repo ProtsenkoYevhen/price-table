@@ -65,13 +65,13 @@
 .price-card__list-item:nth-child(odd) {
   background-color: #2a3438;
 }
-.price-card__button {
+.price-card__order-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 39px;
 }
-.price-card__button_text {
+.price-card__order-btn_text {
   text-transform: uppercase;
   border: none;
   width: 156px;
@@ -79,7 +79,7 @@
   border-radius: 20px;
   color: #fff;
 }
-.price-card__button_text:hover {
+.price-card__order-btn_text:hover {
   cursor: pointer;
 }
 .price-card_business::before {
