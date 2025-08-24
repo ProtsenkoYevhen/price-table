@@ -1,22 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-* {
-  box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.content {
-  background-color: #141b1c;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  gap: 18px;
-  align-items: center;
-  justify-content: center;
-}
-
-.price-card {
+.price-cards {
   width: 380px;
   height: 770px;
   background-color: #334247;
@@ -25,22 +8,24 @@
   position: relative;
   overflow: hidden;
 }
-.price-card__title {
+
+.price-card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 132px;
   color: #fff;
   text-align: center;
   vertical-align: middle;
+  overflow: hidden;
 }
-.price-card__title_main-text {
+.price-card__title {
   font-size: 35px;
   line-height: 43px;
   font-weight: 700;
-  margin-top: 32px;
 }
-.price-card__title_sub-text {
+.price-card__subtitle {
   font-size: 20px;
   line-height: 24px;
   font-weight: 300;
@@ -69,51 +54,16 @@
   margin: 0;
   padding: 0;
 }
-.price-card__options-list_item {
+.price-card__list-item {
   height: 50px;
   font-size: 15px;
   font-weight: 300;
   padding: 16px 22px;
   position: relative;
-}
-.price-card__options-list_item-text {
   padding-left: 20px;
 }
-.price-card__options-list_item:nth-child(odd) {
+.price-card__list-item:nth-child(odd) {
   background-color: #2a3438;
-}
-.price-card__options-list > .basic__check::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 13px;
-  margin-right: 22px;
-  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-}
-.price-card__options-list > .business__check::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 13px;
-  margin-right: 22px;
-  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-}
-.price-card__options-list > .webshop__check::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 13px;
-  margin-right: 22px;
-  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  vertical-align: middle;
 }
 .price-card__button {
   display: flex;
@@ -132,7 +82,7 @@
 .price-card__button_text:hover {
   cursor: pointer;
 }
-.price-card__business::before {
+.price-card_business::before {
   content: "popular";
   position: absolute;
   top: 30px;
@@ -152,13 +102,63 @@
 .basic {
   background-color: #5bb189;
 }
+.basic__check::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 13px;
+  margin-right: 22px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
 
 .business {
   background-color: #3a6ba5;
 }
+.business__check::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 13px;
+  margin-right: 22px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
 
 .webshop {
   background-color: #ec632a;
+}
+.webshop__check::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 13px;
+  margin-right: 22px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  background-color: #141b1c;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
