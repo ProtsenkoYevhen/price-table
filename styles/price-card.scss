@@ -1,4 +1,4 @@
-.price-cards {
+.price-card {
   width: 380px;
   height: 770px;
   background-color: $main-card;
@@ -6,29 +6,28 @@
   color: $text-color;
   position: relative;
   overflow: hidden;
-}
-
-.price-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 132px;
-  color: $text-color;
-  text-align: center;
-  vertical-align: middle;
-  overflow: hidden;
 
   &__title {
-    font-size: 35px;
-    line-height: 43px;
-    font-weight: 700;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 132px;
+    color: $text-color;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
 
-  &__subtitle {
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 300;
+    h2 {
+      font-size: 35px;
+      line-height: 43px;
+      font-weight: 700;
+    }
+
+    span {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   &__price {
