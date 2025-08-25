@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-.price-cards {
+.price-card {
   width: 380px;
   height: 770px;
   background-color: #334247;
@@ -8,8 +8,7 @@
   position: relative;
   overflow: hidden;
 }
-
-.price-card {
+.price-card__title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,15 +19,14 @@
   vertical-align: middle;
   overflow: hidden;
 }
-.price-card__title {
+.price-card__title h2 {
   font-size: 35px;
   line-height: 43px;
   font-weight: 700;
 }
-.price-card__subtitle {
+.price-card__title span {
   font-size: 20px;
   line-height: 24px;
-  font-weight: 300;
 }
 .price-card__price {
   display: flex;
