@@ -70,23 +70,46 @@
     }
   }
 
-  &__order-btn {
+  &__icon {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 13px;
+    margin-right: 22px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+
+    &_basic {
+      background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png');
+    }
+
+    &_business {
+      background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png');
+    }
+
+    &_webshop {
+      background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png');
+    }
+  }
+
+  &__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 39px;
+  }
 
-    &_text {
-      text-transform: uppercase;
-      border: none;
-      width: 156px;
-      height: 40px;
-      border-radius: 20px;
-      color: $text-color;
+  &__order-btn {
+    text-transform: uppercase;
+    border: none;
+    width: 156px;
+    height: 40px;
+    border-radius: 20px;
+    color: $text-color;
 
-      &:hover {
-        cursor: pointer;
-      }
+    &:hover {
+      cursor: pointer;
     }
   }
 
@@ -110,48 +133,12 @@
 
 .basic {
   background-color: $basic-card;
-
-  &__check::before {
-    content: '';
-    display: inline-block;
-    width: 15px;
-    height: 13px;
-    margin-right: 22px;
-    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-  }
 }
 
 .business {
   background-color: $business-card;
-
-  &__check::before {
-    content: '';
-    display: inline-block;
-    width: 15px;
-    height: 13px;
-    margin-right: 22px;
-    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-  }
 }
 
 .webshop {
   background-color: $webshop-card;
-
-  &__check::before {
-    content: '';
-    display: inline-block;
-    width: 15px;
-    height: 13px;
-    margin-right: 22px;
-    background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-  }
 }
